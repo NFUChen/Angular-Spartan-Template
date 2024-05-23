@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  director-gemba-frontend:
+    container_name: "director-gemba-frontend"
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9999:4200"
